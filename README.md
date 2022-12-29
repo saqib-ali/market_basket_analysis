@@ -5,8 +5,8 @@ Order Data:
 select order_number, listagg(item, ', ') from orders
 group by 1;
 ```
+![image](https://user-images.githubusercontent.com/9682332/209956032-ec19cb2c-1826-4ffc-bec0-e65e04003e62.png)
 
-![image](https://user-images.githubusercontent.com/9682332/209955633-265c2fe7-4fb1-48be-bf37-957e0687dc2b.png)
 
 
 ```
@@ -31,5 +31,5 @@ where third_item is not null
 group by third_item;
 ```
 
-Query output:
-![image](https://user-images.githubusercontent.com/9682332/209955806-5fd762fe-27d0-4b3c-8335-bd740961f236.png)
+Frequency of items bought together with Infant Formula and Infant Diapers:
+![image](https://user-images.githubusercontent.com/9682332/209956337-446a56dc-1574-4ff6-a90e-aa79b4eaf155.png)
