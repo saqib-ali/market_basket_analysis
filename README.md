@@ -11,7 +11,7 @@ group by 1;
 
 
 # MATCH_RECOGNIZE query 
-```
+```sql
 with recursive r(n, order_number, item) as (
     select 1, order_number, item from orders
     union all
