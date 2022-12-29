@@ -11,9 +11,15 @@ Example of Association Rules
 Antecedent → Consequent
 ```
 
-Now let's assume we take {Infant Diaper, Infant Milk}, and we want to figure out the Consequent
+Now let's assume we take {Infant Diaper, Infant Milk}, and we want to figure out the Consequent i.e. what ITEM is most often bought with Infant Diaper and Infant Milk.
 
-Order Data:
+
+
+
+## Association Rule Mining using SQL
+Association Rule are, by definition, extracted from the data i.e. they are core properties of the Data. We are not looking for correlation in the Itemsets in a Rule. This makes Relational Databases a good platform for Association Rule Mining. While there are lot of Python and R packages that are designed for Association Rule Mining, we want start exploring the use of SQL to perform Exploratory Data Mining excercise.
+
+Here is our sample order data:
 ```sql
 select order_number, listagg(item, ', ') from orders
 group by 1;
@@ -29,11 +35,7 @@ group by 1;
 | 5            | infant formula, infant diaper, coke                       |
 | 2            | bread, infant diaper, coffee, eggs                        |
 
-Can we say that 
 
-
-# Association Rule Mining using SQL
-Association Rule are, by definition, extracted from the data i.e. they are core properties of the Data. We are not looking for correlation in the Itemsets in a Rule. This makes Relational Databases a good platform for Association Rule Mining. While there are lot of Python and R packages that are designed for Association Rule Mining, we want start exploring the use of SQL to perform Exploratory Data Mining excercise.
 
 The followiing query will look at the Items that bought together with Infant Diaper and Infant Milk. 
 
