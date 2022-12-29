@@ -7,7 +7,16 @@ Order Data:
 select order_number, listagg(item, ', ') from orders
 group by 1;
 ```
-![image](https://user-images.githubusercontent.com/9682332/209956032-ec19cb2c-1826-4ffc-bec0-e65e04003e62.png)
+
+| ORDER_NUMBER | LISTAGG(ITEM, ', ')                                       |
+|--------------|-----------------------------------------------------------|
+| 3            | infant formula, infant diaper, coffee, coke               |
+| 7            | infant formula, infant diaper, moutnain dew, coke, coffee |
+| 1            | bread, infant formula                                     |
+| 4            | bread, infant formula, infant diaper, coffee              |
+| 6            | infant formula, infant diaper, moutnain dew               |
+| 5            | infant formula, infant diaper, coke                       |
+| 2            | bread, infant diaper, coffee, eggs                        |
 
 
 # MATCH_RECOGNIZE query 
