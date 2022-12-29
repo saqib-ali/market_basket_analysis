@@ -1,6 +1,17 @@
 # Association Rule Mining
-What is the most frequently bought item with Infant Formula and Infant Diapers? Association Rule Mining is a key to Market Basket Analysis. While Association Rule Mining is a complex topic, here is a MATCH_RECOGNIZE with a Recursive CTE query to figure out what items most frequently bought together. 
+What is the most frequently bought item with Infant Formula and Infant Diapers? Association Rule Mining is a key to Market Basket Analysis. While Association Rule Mining is a complex topic, we can use SQL to figure out what items most frequently bought together. 
 
+
+Example of Association Rules
+
+```
+{Infant Diaper} → {Coke},
+{Milk, Bread} → {Eggs, Coke},
+{Coke, Bread} → {Infant Milk}
+Antecedent → Consequent
+```
+
+Now let's assume we take {Infant Diaper, Infant Milk}, and we want to figure out the Consequent
 
 Order Data:
 ```sql
@@ -18,8 +29,15 @@ group by 1;
 | 5            | infant formula, infant diaper, coke                       |
 | 2            | bread, infant diaper, coffee, eggs                        |
 
+Can we say that 
 
-# MATCH_RECOGNIZE for Market Basket Analysis
+
+# Association Rule Mining using SQL
+Association Rule are, by definition, extracted from the data i.e. they are core properties of the Data. We are not looking for correlation in the Itemsets in a Rule. This makes Relational Databases a good platform for Association Rule Mining. While there are lot of Python and R packages that are designed for Association Rule Mining, we want start exploring the use of SQL to perform Exploratory Data Mining excercise.
+
+The followiing query will look at the Items that bought together with Infant Diaper and Infant Milk. 
+
+## MATCH_RECOGNIZE for Market Basket Analysis
 ```sql
 with recursive r(n, order_number, item) as (
     select 1, order_number, item from orders
