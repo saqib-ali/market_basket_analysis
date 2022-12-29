@@ -33,5 +33,13 @@ where third_item is not null
 group by third_item;
 ```
 
+THIRD_ITEM	FREQUENCY
+moutnain dew	2
+coke	3
+coffee	3
+bread	1<img width="152" alt="image" src="https://user-images.githubusercontent.com/9682332/209958703-8b0eba62-7849-4294-b581-922d12e64c1d.png">
+
+
+
 Frequency of items bought together with Infant Formula and Infant Diapers:
 ![image](https://user-images.githubusercontent.com/9682332/209956337-446a56dc-1574-4ff6-a90e-aa79b4eaf155.png)
