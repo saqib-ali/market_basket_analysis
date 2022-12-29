@@ -48,7 +48,3 @@ group by third_item;
 | coke         | 3         |
 | coffee       | 3         |
 | bread        | 1         |
-
-
-Frequency of items bought together with Infant Formula and Infant Diapers:
-![image](https://user-images.githubusercontent.com/9682332/209956337-446a56dc-1574-4ff6-a90e-aa79b4eaf155.png)
