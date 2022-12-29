@@ -11,7 +11,7 @@ Example of Association Rules
 Antecedent → Consequent
 ```
 
-Now let's assume we take {Infant Diaper, Infant Milk}, and we want to figure out the Consequent i.e. what ITEM is most often bought with Infant Diaper and Infant Milk.
+Now let's assume we take `{Infant Diaper, Infant Milk}` as the Antecedent, and we want to figure out the Consequent i.e. what ITEM is most often bought with Infant Diaper and Infant Milk.
 
 
 
