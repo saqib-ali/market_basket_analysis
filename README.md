@@ -19,7 +19,7 @@ group by 1;
 | 2            | bread, infant diaper, coffee, eggs                        |
 
 
-# MATCH_RECOGNIZE query 
+# MATCH_RECOGNIZE for Market Basket Analysis
 ```sql
 with recursive r(n, order_number, item) as (
     select 1, order_number, item from orders
