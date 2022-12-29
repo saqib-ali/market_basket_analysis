@@ -3,7 +3,7 @@ What is the most frequently bought item with Infant Formula and Infant Diapers? 
 
 
 Order Data:
-```
+```sql
 select order_number, listagg(item, ', ') from orders
 group by 1;
 ```
