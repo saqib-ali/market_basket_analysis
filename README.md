@@ -68,3 +68,11 @@ group by third_item;
 | coke         | 3         |
 | coffee       | 3         |
 | bread        | 1         |
+
+Based on the above query, we can extract the following Association Rule:
+```
+{Infant Milk, Infant Diaper} → {Coke}
+{Infant Milk, Infant Diaper} → {Coffee}
+```
+
+This doesn't mean that there is correlation between purchase of Infant Milk, Infant Diaper and Coffee. This is just a property if of the Data.
