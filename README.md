@@ -4,7 +4,7 @@ What is the most frequently bought item with Infant Formula and Infant Diapers? 
 ## Association Rule
 
 An association rule is a implication expression of the form
-`X → Y`, where `X` and `Y` are itemset
+`X → Y`, where `X` and `Y` are itemset. X is the Antecedent and Y is the Consequent
 
 Example of Association Rules
 
